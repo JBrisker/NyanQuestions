@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.example.android.nyanquestions.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#BEF38F">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/Adorable"
+           />
+
+   <EditText
+       android:id="@+id/name_Field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Name"
+            android:inputType="textCapWords"
+             android:background="DAFABE"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:background="#7ED6C0"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#BBCBEE">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. A majority of calico cats are female?"
+                android:textColor="#000000"
+                android:textAllCaps="true"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical"
+                android:id="@+id/question_One">
+
+                <RadioButton
+                    android:id="@+id/q_OneA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True"/>
+
+                <RadioButton
+                    android:id="@+id/q_OneB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False"/>
+            </RadioGroup>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:background="#7ED6C0"
+           />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. how many hours on average daily do cats sleep ?"
+                android:textColor="#000000"
+                android:textAllCaps="true" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/question_Two">
+
+                <RadioButton
+                    android:id="@+id/q_TwoA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6-8 hours"/>
+
+                <RadioButton
+                    android:id="@+id/q_TwoB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13-14 hours"/>
+
+                <RadioButton
+                    android:id="@+id/q_TwoC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18-20 hours"/>
+            </RadioGroup>
+</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:background="#7ED6C0"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#BBCBEE">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. What is a group of cats called ?"
+                android:textColor="#000000"
+                android:textAllCaps="true" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/question_Three">
+
+                <RadioButton
+                    android:id="@+id/q_ThreeA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a cauldron"/>
+
+                <RadioButton
+                    android:id="@+id/q_ThreeB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a cete"/>
+
+                <RadioButton
+                    android:id="@+id/q_ThreeC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dp"
+                    android:text="a clowder"/>
+            </RadioGroup>
+</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:background="#7ED6C0"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Terms for a female cat are: "
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginBottom="6dp"
+                android:textAllCaps="true"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Queen"
+            android:id="@+id/q_FourA"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Empress"
+                android:id="@+id/q_FourB"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dutchess"
+                android:id="@+id/q_FourC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Molly"
+                android:id="@+id/q_FourD"/>
+</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:background="#7ED6C0"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#BBCBEE">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Scientific name for domestic cat: "
+            android:textAllCaps="true"
+            android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:id="@+id/q_Five"/>
+        </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:layout_gravity="center"
+                    android:background="#7ED6C0"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Foods dangerous for a cats include: "
+                android:textColor="#000000"
+                android:textAllCaps="true"
+                android:layout_marginBottom="6dp"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="grapes"
+                android:id="@+id/q_SixA"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="blueberries"
+                android:id="@+id/q_SixB"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="chocolate"
+                android:id="@+id/q_SixC"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="green tomatoes"
+                android:id="@+id/q_SixD"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:background="#7ED6C0"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="submit"
+            android:onClick="submitScore"
+            android:id="@+id/sub_But"/>
+
+
+</LinearLayout>
+
+
+</ScrollView>
