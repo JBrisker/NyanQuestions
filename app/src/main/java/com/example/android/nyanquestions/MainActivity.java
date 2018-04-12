@@ -23,16 +23,12 @@ public class MainActivity extends AppCompatActivity {
     // method called when quiz is submitted to calculate
     public void submitScore(View view) {
         // get user name
-        EditText nameField = findViewById(R.id.name_field);
+        EditText nameField = findViewById(R.id.name_Field);
         String name = nameField.getText().toString();
-        if(name.isEmpty() || name.length() == 0 || name.equals("") || name == null)
-        {
-            Toast.makeText(this, "plz enter your name ", Toast.LENGTH_SHORT).show();
+        if (name.isEmpty() || name.length() == 0 || name.equals("") || name == null) {
+            name = "Player 1";
         }
-        else
-        {
-            Toast.makeText(this, "Lets begin!", Toast.LENGTH_SHORT).show();
-        }
+
         // radio buttons set 1 check
         RadioButton answer1A = findViewById(R.id.q_OneA);// correct answer
 
@@ -76,8 +72,16 @@ public class MainActivity extends AppCompatActivity {
         Button submit = findViewById(R.id.sub_But);
         submit.setEnabled(false);
     }
-      private String quizResult(String name, int correctAnswers) {
-        String results = "Meowzah! " + name + " you answered " + correctAnswers + " out of 6 correct";
+
+    private String quizResult(String name, int correctAnswers) {
+        String results;
+        if (correctAnswers == 6) {
+            results = "Puuuurfection! " + name + " you answered " + correctAnswers + " out of 6 correct";
+        } else if (correctAnswers > 4) {
+            results = "Meowzah! Feline Job " + name + " you answered " + correctAnswers + " out of 6 correct";
+        } else {
+            results = "You must be kitten me " + name + ",  you answered " + correctAnswers + " out of 6 correct";
+        }
         return results;
     }
 
